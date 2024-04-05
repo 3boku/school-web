@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <caption>
+        교재 가격표
+      </caption>
+      <thead>
+        <th>서적명</th>
+        <th>출판사</th>
+        <th>가격</th>
+        <th>기타</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML5</td>
+          <td>공갈닷컴</td>
+          <td>55,000원</td>
+          <td rowspan="2"></td>
+        </tr>
+        <tr>
+          <td>CSS3</td>
+          <td>영진닷컴</td>
+          <td>32,000원</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">합계</th>
+          <th>107,000원</th>
+          <th></th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+  <style>
+    table {
+      width: 400px;
+    }
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+
+    thead,
+    th {
+      background-color: bisque;
+    }
+  </style>
+</html>
