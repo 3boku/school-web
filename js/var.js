@@ -1,9 +1,12 @@
-var name = "정현서";
-var age = 19;
-var gender = true;
-var height = 181.1;
-var job = undefined;
-var boyfriend = null;
+let name = "정현서";
+let age = 19;
+let gender = true;
+let height = 181.1;
+let job = undefined;
+let boyfriend = null;
+
+const yunhwan_love = "pikachu";
+const kt_wiz = "winners";
 
 console.log(name);
 console.log(age);
