@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>회원 가입을 환영합니다.</h1>
+    <form action="">
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <ul>
+          <li>
+            <label for="">아이디</label
+            ><input
+              type="text"
+              name="id"
+              autofocus
+              required
+              placeholder="4자 ~ 10자 사이, 공백없이"
+            />
+          </li>
+          <li>
+            <label for="">이메일 </label
+            ><input type="text" name="email" required />
+          </li>
+          <li>
+            <label for=""
+              >비밀번호
+              <input
+                type="password"
+                name="pwd"
+                required
+                placeholder="문자와 숫자, 특수 기호 포함"
+            /></label>
+            <li><label for=""
+              >비밀번호 확인 <input type="password" required
+            /></label></li>
+            <label>
+                가입경로 
+                <select name="gyung" id="asd">
+                    <option value="blog">블로그</option>
+                    <option value="search">검색</option>
+                    <option value="SNS">SNS</option>
+                    <option value="etc">기타</option>
+                </select><br>
+                메모
+                <textarea name="" id="" cols="40" rows="4"></textarea>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+        <input type="radio"> 메일 수신
+        <input type="radio" checked> 메일 수신 안 함
+      </fieldset>
+      <input type="submit" value="가입하기">
+      <input type="reset" value="취소">
+    </form>
+  </body>
+</html>
