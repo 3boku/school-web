@@ -4,3 +4,5 @@
 for (let index = 1; index <= 9; index++) {
     console.log(`2 * ${index} = ${2 * index}`);
 }
+
+for 
