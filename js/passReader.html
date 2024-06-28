@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 id="result"></h1>
+        <p id="desc"></p>
+        <script>
+            console.log("코드시작");
+            let name = prompt("이름을 입력하세요");
+            let scores = prompt("점수를 입력하세요");
+            let result = document.querySelector("#result");
+            let desc = document.querySelector("#desc");
+
+            if (!isNaN(scores)) {
+                if (scores >= 80) {
+                    console.log("합격");
+                    result.innerText = "합격";
+                    desc.innerText = `${name}님 축하합니다. 점수: ${scores} 점`;
+                } else {
+                    console.log("불합격");
+                    result.innerText = "불합격";
+                    desc.innerText = `${name}님 노력해봅시다. 점수: ${scores} 점`;
+                }
+            } else {
+                alert("점수만 입력하세요.");
+            }
+        </script>
+    </body>
+</html>

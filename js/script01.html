@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 id="heading">자바스크립트</h1>
+        <p>위 텍스트를 클릭래 보세요</p>
+        <script>
+            let heading = document.querySelector("#heading");
+            heading.onclick = function () {
+                heading.style.color = "red";
+                //alert("수정 완료!");
+                // let reply = confirm("정말 바꾸시겠습니까?");
+                // alert(reply);
+                let name = prompt("이름을 입력하세요.", "로봇고");
+                console.log(name);
+            };
+        </script>
+    </body>
+</html>
