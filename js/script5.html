@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            div {
+                display: inline-block;
+                padding: 0px 20px 30px 20px;
+                margin: 15px;
+                border: 1px solid #ccc;
+                line-height: 2;
+            }
+            div h3 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>구구단</h1>
+        <script>
+            let fdan = parseInt(prompt("구구단의 시작 단 입력"));
+            let ldan = parseInt(prompt("구구단의 끝 단 입력"));
+
+            for (let i = fdan; i <= ldan; i++) {
+                document.write(`<div><h3>${i}단</h3>`);
+                for (let j = 1; j < 10; j++) {
+                    document.write(`${i} x ${j} = ${i * j}<br>`);
+                }
+                document.write("</div>");
+            }
+        </script>
+    </body>
+</html>

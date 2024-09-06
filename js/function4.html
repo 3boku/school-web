@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function addNum() {
+                let sum = 0;
+                for (let i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return sum;
+            }
+
+            document.write(`인수 3개 : ${addNum(1, 2, 3)} 입니다. </br>`);
+            document.write(`인수 2개 : ${addNum(1, 2)} 입니다. </br>`);
+            document.write(`인수 1개 : ${addNum(1)} 입니다. </br>`);
+            document.write(`인수 0개 : ${addNum()} 입니다. </br>`);
+        </script>
+    </body>
+</html>

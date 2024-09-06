@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 id="score"></h1>
+        <script>
+            let score = parseInt(prompt("점수는?"));
+
+            if (!isNaN(score)) {
+                switch (true) {
+                    case score > 100:
+                        alert("100 이하의 수를 입력하세요.");
+                        break;
+                    case score >= 90:
+                        document.getElementById(
+                            "score",
+                        ).innerText = `${score}는 A등급 입니다.`;
+                        break;
+                    case score >= 80:
+                        document.getElementById(
+                            "score",
+                        ).innerText = `${score}는 B등급 입니다.`;
+                        break;
+                    case score >= 70:
+                        document.getElementById(
+                            "score",
+                        ).innerText = `${score}는 C등급 입니다.`;
+                        break;
+                    case score >= 60:
+                        document.getElementById(
+                            "score",
+                        ).innerText = `${score}는 D등급 입니다.`;
+                        break;
+                    case score < 60:
+                        document.getElementById(
+                            "score",
+                        ).innerText = `${score}는 F등급 입니다.`;
+                        break;
+                    default:
+                        document.getElementById("score").innerText =
+                            "0 ~ 100사이의 숫자를 입력하세요";
+                }
+            } else {
+                alert("숫자를 입력하세요.");
+            }
+        </script>
+    </body>
+</html>

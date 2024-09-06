@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            table,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            td {
+                padding: 5px;
+                font-size: 0.9em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>자리배치도</h1>
+        <script>
+            let memNum = Number(prompt("입장객은 몇 명 인가요?"));
+            let colNum = Number(prompt("한 줄에 몇명씩 앉습니까?"));
+            let temp = 1;
+
+            document.write("<table>");
+            for (let i = 1; i <= Math.ceil(memNum / colNum); i++) {
+                document.write("<tr>");
+                for (let j = 1; j <= colNum; j++) {
+                    if (temp > memNum) {
+                        break;
+                    } else {
+                        document.write(`<td>좌석 ${temp}</td>`);
+                        temp++;
+                    }
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        </script>
+    </body>
+</html>
